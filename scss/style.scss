@@ -1,5 +1,7 @@
 @import "nullstyle.scss";
 
+
+
 $green: #7EB693;
 $black: #274C5B;
 $gray: #525C60;
@@ -149,11 +151,7 @@ body {
     &--active {
       top: 110px;
     }
-
-
   }
-
-  &__item {}
 
   &__link {
     display: block;
