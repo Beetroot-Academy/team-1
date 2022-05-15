@@ -1,87 +1,21 @@
-@charset "UTF-8";
-/*Обнуление*/
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
+@import "nullstyle.scss";
 
-*, *:before, *:after {
-  box-sizing: border-box;
-}
+$green: #7EB693;
+$black: #274C5B;
+$gray: #525C60;
+$yellow: #EFD372;
 
-:focus, :active {
-  outline: none;
-}
-
-a:focus, a:active {
-  outline: none;
-}
-
-nav, footer, header, aside {
-  display: block;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input, button, textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a, a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-/*--------------------*/
 body {
-  font-family: "Open Sans", "Roboto", "Yellowtail", sans-serif;
+  font-family: 'Open Sans', 'Roboto', 'Yellowtail', sans-serif;
   box-sizing: border-box;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-weight: 400;
   font-size: 18px;
   line-height: 1.8;
   letter-spacing: 0.36px;
-  color: #525C60;
+  color: $gray;
 }
+
 
 .container {
   max-width: 1420px;
@@ -89,47 +23,69 @@ body {
   padding: 0 20px;
 }
 
+
 .section-title {
-  font-family: "Yellowtail";
+  font-family: 'Yellowtail';
   font-weight: 400;
   font-size: 36px;
   line-height: 1.8;
   letter-spacing: 0.36px;
   text-transform: capitalize;
-  color: #7EB693;
+  color: $green;
 }
 
+
 .section-subtitle {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 700;
   font-size: 45px;
   line-height: 1.3;
   letter-spacing: 0.36px;
   text-transform: capitalize;
-  color: #274C5B;
+  color: $black;
 }
 
+
 .btn {
-  background: #EFD372;
-  border: 1px solid #EFD372;
+  background: $yellow;
+  border: 1px solid $yellow;
   border-radius: 16px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 400;
   font-size: 19px;
   line-height: 1.68;
   letter-spacing: 0.36px;
   text-transform: capitalize;
-  color: #274C5B;
+  color: $black;
   padding: 25px 30px;
   position: relative;
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 34px;
+    background-image: '../img/arrow.svg';
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
-.btn:after {
-  position: absolute;
-  content: "";
-  width: 38px;
-  height: 34px;
-  background-image: "../img/arrow.svg";
-  background-position: center;
-  background-repeat: no-repeat;
+
+.about-us {
+  display: flex;
+  &__item {
+  }
 }
-/*# sourceMappingURL=style.css.map */
+
+
+.section-label {
+  font-family: 'Roboto';
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 0.36px;
+  color: $black;
+}
+.btn {
+}
+.about-us-btn {
+}
