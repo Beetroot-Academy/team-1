@@ -1,26 +1,12 @@
 @import "nullstyle.scss";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-body {
-    font-family: 'Open Sans', 'Roboto', 'Yellowtail', sans-serif;
-=======
 $green: #7EB693;
 $black: #274C5B;
 $gray: #525C60;
 $yellow: #EFD372;
 
-=======
 body {
-    font-family: 'Open Sans', 'Roboto', 'Yellowtail', sans-serif;
-    $green: #7EB693;
-    $black: #274C5B;
-    $gray: #525C60;
-    $yellow: #EFD372;
-}
->>>>>>> 561d05f823dd8fb4c63553591aaf3cf69fa00701
-
-body {
+  font-family: 'Open Sans', 'Roboto', 'Yellowtail', sans-serif;
   box-sizing: border-box;
   font-family: 'Open Sans';
   font-weight: 400;
@@ -28,10 +14,6 @@ body {
   line-height: 1.8;
   letter-spacing: 0.36px;
   color: $gray;
-<<<<<<< HEAD
->>>>>>> c7b59134d4bf1b6c0d649be17d210f332474d65c
-=======
->>>>>>> 561d05f823dd8fb4c63553591aaf3cf69fa00701
 }
 
 
