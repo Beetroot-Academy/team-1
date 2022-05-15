@@ -1,27 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <main>
-      <div>dfsdf`</div>
-      <img src="dfsdf" alt="dfsdf" />
-    </main>
-    <script src="js/script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a href="#" class="logo">
+        <svg class="logo__icon">
+          <use xlink:href="../img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <hav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Shop</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Pages</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact Us</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </hav>
+      <a href="#" class="busket">
+        <span class="busket__icon-cont">
+          <svg class="busket__icon">
+            <use xlink:href="../img/sprite.svg#bucket"></use>
+          </svg>
+        </span>
+        <span class="busket__info">
+          Cart 0
+        </span>
+      </a>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <h2 class="section-title hero__title">
+          Made with nature
+        </h2>
+        <span class="section-subtitle hero__subtitle">
+          Welcome to the world of nature and organic.
+        </span>
+        <button class="btn hero__btn">
+          Explore Now
+        </button>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
+
+
+<svg class="icon">
+  <use xlink:href="#arrow"></use>
+</svg><svg class="icon">
+  <use xlink:href="#bucket"></use>
+</svg>
