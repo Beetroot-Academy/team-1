@@ -4,7 +4,8 @@
     $black: #274C5B;
     $gray: #525C60;
     $yellow: #EFD372;
-
+    $backgraund-color: #F9F8F8;
+    $border-color: #d4d4d4;
 
 body {
 
@@ -16,7 +17,9 @@ body {
   letter-spacing: 0.36px;
   color: $gray;
 }
-
+img{
+    max-width: 100%;
+}
 
 .container {
   max-width: 1420px;
@@ -33,6 +36,7 @@ body {
   letter-spacing: 0.36px;
   text-transform: capitalize;
   color: $green;
+  text-align: center;
 }
 
 
@@ -44,6 +48,7 @@ body {
   letter-spacing: 0.36px;
   text-transform: capitalize;
   color: $black;
+  text-align: center;
 }
 
 
@@ -70,4 +75,90 @@ body {
     background-position: center;
     background-repeat: no-repeat;
   }
+}
+
+//organic
+.organic{
+    padding-top: 100px;
+}
+.icon{
+    font-size: 14px;
+    color: #ffa858;
+}
+.organic_title{
+    margin-bottom: 42px;
+}
+.organic_container{
+    max-width: 1380px;
+    margin: 0 auto;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.card_container{
+    display: flex;
+    padding: 10px;
+    width: calc(100% / 3);
+
+}
+.organic_cards{
+    background-color: $backgraund-color;
+    border-radius: 30px;
+    padding: 30px;
+
+}
+.card{
+    &_link{
+        font-family: 'Open Sans';
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.8;
+        color: #ffffff;
+        background-color: $black;
+        border: 8px;
+        padding: 5px 20px;
+    }
+    &_img{
+        margin-bottom: 19px;
+    }
+    &_text{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.6;
+        letter-spacing: 0.36px;
+        color: $black;
+        margin-bottom: 10px;
+    }
+    &_bot{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $border-color;
+        align-items: center;
+        &__text{
+            display: flex;
+        }
+        &__white{
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 1.9;
+            letter-spacing: 0.36px;
+            text-decoration-line: line-through;
+            color: #B8B8B8;
+        }   
+        &__blue{
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.8;
+            letter-spacing: 0.36px;
+            color: $black;
+        } 
+        &__icons{
+            display: flex;
+        }
+    }
 }

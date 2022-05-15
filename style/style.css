@@ -82,6 +82,10 @@ body {
   color: #525C60;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   max-width: 1420px;
   width: 100%;
@@ -96,6 +100,7 @@ body {
   letter-spacing: 0.36px;
   text-transform: capitalize;
   color: #7EB693;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -106,6 +111,7 @@ body {
   letter-spacing: 0.36px;
   text-transform: capitalize;
   color: #274C5B;
+  text-align: center;
 }
 
 .btn {
@@ -130,4 +136,93 @@ body {
   background-image: "../img/arrow.svg";
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.organic {
+  padding-top: 100px;
+}
+
+.icon {
+  font-size: 14px;
+  color: #ffa858;
+}
+
+.organic_title {
+  margin-bottom: 42px;
+}
+
+.organic_container {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.card_container {
+  display: flex;
+  padding: 10px;
+  width: 33.3333333333%;
+}
+
+.organic_cards {
+  background-color: #F9F8F8;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.card_link {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.8;
+  color: #ffffff;
+  background-color: #274C5B;
+  border: 8px;
+  padding: 5px 20px;
+}
+.card_img {
+  margin-bottom: 19px;
+}
+.card_text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.6;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+  margin-bottom: 10px;
+}
+.card_bot {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #d4d4d4;
+  align-items: center;
+}
+.card_bot__text {
+  display: flex;
+}
+.card_bot__white {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.9;
+  letter-spacing: 0.36px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #B8B8B8;
+}
+.card_bot__blue {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+}
+.card_bot__icons {
+  display: flex;
 }
