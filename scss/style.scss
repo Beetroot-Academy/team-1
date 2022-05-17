@@ -1,4 +1,28 @@
 @import "nullstyle.scss";
+    $desctop: 992px;
+    $tablet: 767px;
+    $mobile: 568px;
+
+    $green: #7EB693;
+    $black: #274C5B;
+    $gray: #525C60;
+    $yellow: #EFD372;
+    $backgraund-color: #F9F8F8;
+    $border-color: #d4d4d4;
+
+body {
+
+  box-sizing: border-box;
+  font-family: 'Open Sans', 'Roboto', 'Yellowtail', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0.36px;
+  color: $gray;
+}
+img{
+    max-width: 100%;
+}
 
 $green: #7EB693;
 $black: #274C5B;
@@ -14,19 +38,6 @@ $desktop: 1420px;
   align-items: center;
   justify-content: $jus;
 }
-
-
-body {
-  font-family: 'Open Sans', 'Roboto', 'Yellowtail', sans-serif;
-  box-sizing: border-box;
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.8;
-  letter-spacing: 0.36px;
-  color: $gray;
-}
-
 
 .container {
   margin: 0 auto;
@@ -44,6 +55,7 @@ body {
   letter-spacing: 0.36px;
   text-transform: capitalize;
   color: $green;
+  text-align: center;
 }
 
 
@@ -55,6 +67,7 @@ body {
   letter-spacing: 0.36px;
   text-transform: capitalize;
   color: $black;
+  text-align: center;
 }
 .section-label {
   font-family: 'Roboto';
@@ -89,7 +102,6 @@ body {
   &:after {
     position: absolute;
     content: '';
-    right: 10px;
     width: 34px;
     height: 34px;
     border-radius: 50px;
@@ -101,6 +113,122 @@ body {
   }
 }
 
+//organic
+.organic{
+    padding-top: 100px;
+    padding-bottom: 140px;
+      @media screen and (max-width: $tablet){
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+}
+.icon{
+    font-size: 14px;
+    color: #ffa858;
+}
+.organic_title{
+    margin-bottom: 42px;
+      @media screen and (max-width: $tablet){
+        margin-bottom: 25px;
+      }
+}
+.organic_container{
+    max-width: 1380px;
+    margin: 0 auto;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.card_container{
+    display: flex;
+    padding: 10px;
+    width: calc(100% / 3);
+      @media screen and (max-width: $tablet){
+        width: 50%;
+      }
+      @media screen and (max-width: $mobile){
+        width: 100%;
+      }
+
+}
+.organic_cards{
+    background-color: $backgraund-color;
+    border-radius: 30px;
+    padding: 30px;
+
+}
+.card{
+  @media screen and (max-width: $desctop){
+    text-align: center;
+  }
+    &_link{
+        font-family: 'Open Sans';
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.8;
+        color: #ffffff;
+        background-color: $black;
+        border: 8px;
+        padding: 5px 20px;
+    }
+    &_img{
+        margin-bottom: 19px;
+    }
+    &_text{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.6;
+        letter-spacing: 0.36px;
+        color: $black;
+        margin-bottom: 10px;
+    }
+    &_bot{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $border-color;
+        align-items: center;
+          @media screen and (max-width: $desctop){
+            display: block;
+            text-align: center;
+          }
+          @media screen and (max-width: $tablet){
+            padding-top: 10px;
+          }
+        &__text{
+            display: flex;
+            @media screen and (max-width: $desctop){
+              display: block;
+            }
+        }
+        &__white{
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 1.9;
+            letter-spacing: 0.36px;
+            text-decoration-line: line-through;
+            color: #B8B8B8;
+        }   
+        &__blue{
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.8;
+            letter-spacing: 0.36px;
+            color: $black;
+        } 
+        &__icons{
+            display: flex;
+            @media screen and (max-width: $desctop){
+              display: block;
+              
+            }
+        }
+    }
+}
 .about-us {
   &__container {
     background-color: #F9F8F8;
