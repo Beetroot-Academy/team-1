@@ -1,4 +1,7 @@
 @import "nullstyle.scss";
+    $desctop: 992px;
+    $tablet: 767px;
+    $mobile: 568px;
 
     $green: #7EB693;
     $black: #274C5B;
@@ -104,6 +107,9 @@ $desktop: 1420px;
 //organic
 .organic{
     padding-top: 100px;
+      @media screen and (max-width: $tablet){
+        padding-top: 30px;
+      }
 }
 .icon{
     font-size: 14px;
@@ -111,6 +117,9 @@ $desktop: 1420px;
 }
 .organic_title{
     margin-bottom: 42px;
+      @media screen and (max-width: $tablet){
+        margin-bottom: 25px;
+      }
 }
 .organic_container{
     max-width: 1380px;
@@ -125,6 +134,12 @@ $desktop: 1420px;
     display: flex;
     padding: 10px;
     width: calc(100% / 3);
+      @media screen and (max-width: $tablet){
+        width: 50%;
+      }
+      @media screen and (max-width: $mobile){
+        width: 100%;
+      }
 
 }
 .organic_cards{
@@ -134,6 +149,9 @@ $desktop: 1420px;
 
 }
 .card{
+  @media screen and (max-width: $desctop){
+    text-align: center;
+  }
     &_link{
         font-family: 'Open Sans';
         font-size: 15px;
@@ -161,8 +179,18 @@ $desktop: 1420px;
         justify-content: space-between;
         border-top: 1px solid $border-color;
         align-items: center;
+          @media screen and (max-width: $desctop){
+            display: block;
+            text-align: center;
+          }
+          @media screen and (max-width: $tablet){
+            padding-top: 10px;
+          }
         &__text{
             display: flex;
+            @media screen and (max-width: $desctop){
+              display: block;
+            }
         }
         &__white{
             font-family: 'Open Sans';
@@ -183,6 +211,10 @@ $desktop: 1420px;
         } 
         &__icons{
             display: flex;
+            @media screen and (max-width: $desctop){
+              display: block;
+              
+            }
         }
     }
 }
