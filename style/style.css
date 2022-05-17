@@ -115,6 +115,14 @@ img {
   text-align: center;
 }
 
+.section-label {
+  font-family: "Roboto";
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+}
+
 .btn {
   background: #EFD372;
   border: 1px solid #EFD372;
@@ -127,6 +135,7 @@ img {
   text-transform: capitalize;
   color: #274C5B;
   padding: 25px 30px;
+  padding-right: 50px;
   position: relative;
   padding-right: 50px;
   transition: box-shadow 0.3s;
@@ -281,6 +290,60 @@ img {
   .card_bot__icons {
     display: block;
   }
+}
+
+.about-us__container {
+  background-color: #F9F8F8;
+  margin: 0 auto;
+  padding-top: 130px;
+  padding-bottom: 150px;
+}
+.about-us__row {
+  display: flex;
+  justify-content: center;
+}
+.about-us__item {
+  flex: 1 1 50%;
+}
+.about-us__item h3 + p {
+  margin-bottom: 56px;
+}
+.about-us__item ul {
+  margin-bottom: 45px;
+}
+.about-us__img {
+  width: 100%;
+}
+.about-us__subtitle {
+  margin-bottom: 22px;
+}
+.about-us__standard {
+  margin-bottom: 25px;
+  padding-left: 150px;
+  position: relative;
+}
+.about-us__standard:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/about-us/cup.png);
+  background-repeat: no-repeat;
+  left: 20px;
+}
+.about-us__standard:nth-child(2):before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/about-us/post.png);
+  background-repeat: no-repeat;
+  left: 20px;
+}
+.about-us-btn {
+  background: #274C5B;
+  border: 1px solid #274C5B;
+  color: #ffffff;
 }
 
 .burger {
