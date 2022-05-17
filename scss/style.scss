@@ -1,6 +1,5 @@
 @import "nullstyle.scss";
 
-<<<<<<< HEAD
     $green: #7EB693;
     $black: #274C5B;
     $gray: #525C60;
@@ -22,8 +21,6 @@ img{
     max-width: 100%;
 }
 
-.container {
-=======
 $green: #7EB693;
 $black: #274C5B;
 $gray: #525C60;
@@ -38,22 +35,8 @@ $desktop: 1420px;
   justify-content: $jus;
 }
 
-
-body {
-  font-family: 'Open Sans', 'Roboto', 'Yellowtail', sans-serif;
-  box-sizing: border-box;
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.8;
-  letter-spacing: 0.36px;
-  color: $gray;
-}
-
-
 .container {
   margin: 0 auto;
->>>>>>> main
   max-width: 1420px;
   width: 100%;
   padding: 0 20px;
@@ -68,10 +51,7 @@ body {
   letter-spacing: 0.36px;
   text-transform: capitalize;
   color: $green;
-<<<<<<< HEAD
   text-align: center;
-=======
->>>>>>> main
 }
 
 
@@ -83,10 +63,7 @@ body {
   letter-spacing: 0.36px;
   text-transform: capitalize;
   color: $black;
-<<<<<<< HEAD
   text-align: center;
-=======
->>>>>>> main
 }
 
 
@@ -103,8 +80,6 @@ body {
   color: $black;
   padding: 25px 30px;
   position: relative;
-<<<<<<< HEAD
-=======
   padding-right: 50px;
   transition: box-shadow 0.3s;
 
@@ -112,29 +87,20 @@ body {
     box-shadow: 0 0 20px 2px rgba($black, $alpha: .6);
 
   }
->>>>>>> main
 
   &:after {
     position: absolute;
     content: '';
-<<<<<<< HEAD
-    width: 38px;
-    height: 34px;
-    background-image: '../img/arrow.svg';
-=======
-    right: 10px;
     width: 34px;
     height: 34px;
     border-radius: 50px;
     background-color: #335B6B;
     background-image: url('../img/arrow.svg');
->>>>>>> main
     background-position: center;
     background-repeat: no-repeat;
   }
 }
 
-<<<<<<< HEAD
 //organic
 .organic{
     padding-top: 100px;
@@ -220,7 +186,6 @@ body {
         }
     }
 }
-=======
 
 .burger {
   display: flex;
@@ -430,4 +395,3 @@ body {
     }
   }
 }
->>>>>>> main
