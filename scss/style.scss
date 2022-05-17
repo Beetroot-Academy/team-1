@@ -107,8 +107,10 @@ $desktop: 1420px;
 //organic
 .organic{
     padding-top: 100px;
+    padding-bottom: 140px;
       @media screen and (max-width: $tablet){
         padding-top: 30px;
+        padding-bottom: 30px;
       }
 }
 .icon{
