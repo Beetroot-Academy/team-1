@@ -1,90 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-  <title>Document</title>
-  <link rel="stylesheet" href="style/style.css" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="container header__container">
-      <a href="#" class="logo">
-        <svg class="logo__icon">
-          <use xlink:href="../img/sprite.svg#logo"></use>
-        </svg>
-      </a>
-      <hav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">About Us</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Shop</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Pages</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Contact Us</a>
-          </li>
-        </ul>
-        <div class="burger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </hav>
-      <a href="#" class="busket">
-        <span class="busket__icon-cont">
-          <svg class="busket__icon">
-            <use xlink:href="../img/sprite.svg#bucket"></use>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="logo">
+          <svg class="logo__icon">
+            <use xlink:href="../img/sprite.svg#logo"></use>
           </svg>
-        </span>
-        <span class="busket__info">
-          Cart 0
-        </span>
-      </a>
-    </div>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="container hero__container">
-        <h2 class="section-title hero__title">
-          Made with nature
-        </h2>
-        <span class="section-subtitle hero__subtitle">
-          Welcome to the world of nature and organic.
-        </span>
-        <button class="btn hero__btn">
-          Explore Now
-        </button>
+        </a>
+        <hav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Shop</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Pages</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact Us</a>
+            </li>
+          </ul>
+          <div class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </hav>
+        <a href="#" class="busket">
+          <span class="busket__icon-cont">
+            <svg class="busket__icon">
+              <use xlink:href="../img/sprite.svg#bucket"></use>
+            </svg>
+          </span>
+          <span class="busket__info"> Cart 0 </span>
+        </a>
       </div>
-    </section>
-  </main>
-  <script src="js/script.js"></script>
-</body>
-
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <h2 class="section-title hero__title">Made with nature</h2>
+          <span class="section-subtitle hero__subtitle">
+            Welcome to the world of nature and organic.
+          </span>
+          <button class="btn hero__btn">Explore Now</button>
+        </div>
+      </section>
+      <section class="about-us">
+        <div class="conteiner about-us__container">
+          <div class="about-us__row">
+            <div class="about-us__item">
+              <img
+                src="img/about-us/citrus.png"
+                alt="citrus"
+                class="about-us__img"
+              />
+            </div>
+            <div class="about-us__item">
+              <h2 class="section-title about-us__title">About Us</h2>
+              <h3 class="section-subtitle about-us__subtitle">
+                We Believe in Organic Foods For Strong Health
+              </h3>
+              <p>
+                Welcome to the world of natural and organic. Here you can
+                discover the bounty of nature. We have grown on the principles
+                of health, and care. We aim to give our customers a healthy
+                chemical-free meal for perfect nutrition.
+              </p>
+              <ul>
+                <li class="about-us__standard">
+                  <h4 class="section-label">Organic Foods Only</h4>
+                  <p>
+                    The Product that you ordered will be verified that we have
+                    or not if have we will start to move on with the next step.
+                  </p>
+                </li>
+                <li class="about-us__standard">
+                  <h4 class="section-label">Quality Standards</h4>
+                  <p>
+                    Once your product is packed it will be delivered to your
+                    nearby locality you can directly visit the to buy the
+                    product.
+                  </p>
+                </li>
+              </ul>
+              <div><a class="btn about-us-btn" href="#">Shop Now </a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
 </html>
-
-
-<svg class="icon">
-  <use xlink:href="#arrow"></use>
-</svg><svg class="icon">
-  <use xlink:href="#bucket"></use>
-</svg>
