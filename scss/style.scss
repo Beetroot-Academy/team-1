@@ -32,7 +32,7 @@ $white: #ffffff;
 $tablet: 768px;
 $desktop: 1420px;
 
-@mixin flex-row-centred ($jus: start) {
+@mixin flex-row-centred ($jus: flex-start) {
 
   display: flex;
   align-items: center;
@@ -258,6 +258,7 @@ $desktop: 1420px;
   }
 
   &__standard{
+    overflow:hidden;
     margin-bottom: 25px;
     padding-left: 150px;
     position: relative;
@@ -282,6 +283,7 @@ $desktop: 1420px;
     }
   }
   &-btn {
+    display: inline-block;
     background: $black;
     border: 1px solid $black;
     color: $white;
@@ -401,7 +403,7 @@ $desktop: 1420px;
   border: 1px solid #D4D4D4;
   border-radius: 33px;
 
-  @include flex-row-centred(start);
+  @include flex-row-centred(flex-start);
   gap: 10px;
   transition: box-shadow 0.3s;
 
