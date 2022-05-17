@@ -8,7 +8,7 @@ $white: #ffffff;
 $tablet: 768px;
 $desktop: 1420px;
 
-@mixin flex-row-centred ($jus: start) {
+@mixin flex-row-centred ($jus: flex-start) {
 
   display: flex;
   align-items: center;
@@ -111,17 +111,20 @@ body {
 
   &__row {
     display: flex;
-    justify-content: center
+    justify-content: center;
+
   }
   &__item {
-    flex: 1 1 50%;
+    flex: 1 1 0%;
+    flex-wrap: wrap;
+    }
     h3 + p {
       margin-bottom: 56px;
     }
     ul{
       margin-bottom: 45px;
     }
-  }
+
   &__img {
     width: 100%;
   }
@@ -130,6 +133,7 @@ body {
   }
 
   &__standard{
+    overflow: hidden;
     margin-bottom: 25px;
     padding-left: 150px;
     position: relative;
@@ -150,10 +154,10 @@ body {
       background-image: url(../img/about-us/post.png);
       background-repeat: no-repeat;
       left: 20px;
-
     }
   }
   &-btn {
+    display:inline-block;
     background: $black;
     border: 1px solid $black;
     color: $white;
@@ -273,7 +277,7 @@ body {
   border: 1px solid #D4D4D4;
   border-radius: 33px;
 
-  @include flex-row-centred(start);
+  @include flex-row-centred(flex-start);
   gap: 10px;
   transition: box-shadow 0.3s;
 
